@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        #a1{
+            width: 900px;
+            height: 900px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        #a2{
+            width: 100px;
+            height: 50px;
+            border: 1px solid yellow;
+        }
+
+        #b1{
+            width: 100px;
+            height: 150px;
+            /*border: 1px solid green;*/
+            display: none;
+
+        }
+        #b1 li{
+            border: 1px solid green;
+
+        }
+        #a2:hover ~#b1{
+            display: block;
+
+        }
+        #b1:hover{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="a1">
+        <div id="a2"><button style="width: 100px; height: 50px">点我拉</button></div>
+        <div id="b1">
+            <ul>
+                <li><button style="width: 100px; height:30px">1111</button></li>
+                <li><button style="width: 100px; height:30px">2222</button></li>
+                <li><button style="width: 100px; height:30px">3333</button></li>
+                <li><button style="width: 100px; height:30px">4444</button></li>
+                <li><button style="width: 100px; height:30px">5888885</button></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
